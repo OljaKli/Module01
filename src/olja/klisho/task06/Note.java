@@ -35,6 +35,8 @@ public class Note {
 
     /**
      * Note constructor creates Note with given title and text
+     * @param text new note text
+     * @param title new note title
      */
     public Note (String title, String text) {
         this.title = title;
@@ -59,6 +61,7 @@ public class Note {
 
     /**
      * editText method sets up the new text value
+     * @param text new note text
      */
     public void editText(String text) {
         this.text = text;
@@ -66,6 +69,7 @@ public class Note {
 
     /**
      * getText method returns text
+     * @return the text of the note
      */
     public String getText() {
         return text;

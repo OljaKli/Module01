@@ -11,6 +11,9 @@ public class Notepad implements Iterable<Note>{
 
     /**
      * addNote method creates new note, puts in the collection of Notes and returns it
+     * @return the new Note with title and text params
+     * @param title new note title
+     * @param text new note text
      */
     public Note addNote(String title, String text) {
         Note newNote = new Note(title, text);
@@ -20,6 +23,7 @@ public class Notepad implements Iterable<Note>{
 
     /**
      * removeNote method removes notes from the collection
+     * @param note to be removed
      */
     public void removeNote(Note note) {
         notes.remove(note);
