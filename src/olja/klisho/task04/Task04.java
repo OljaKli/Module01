@@ -7,14 +7,19 @@ package olja.klisho.task04;
 public class Task04 {
 
     public static void main(String[] args) {
-        int ar [] = {1,2,3,4,5};
-        int n = ar.length;
-        int max = (ar[0]+ ar[n-1]);
-        for (int i = 0; i < n/2+1; i++) {
-                if (max < ar[i]+ar[n-i-1])
-                    max = ar[i]+ar[n-i-1];
-
-        }
+        double ar [] = {1,2,3,4,5};
+        double max = maxSum(ar);
         System.out.println(max);
+    }
+
+    public static  double maxSum (double ar []) {
+        int n = ar.length;
+        double max = (ar[0]+ ar[n-1]);
+        for (int i = 0; i < n/2+1; i++) {
+            if (max < ar[i]+ar[n-i-1])
+                max = ar[i]+ar[n-i-1];
+            System.out.println("i=" + i + " " + "ar[i]=" + ar[i] +  " " + "ar[n-i-1]=" + ar[n-i-1]);
+        }
+        return max;
     }
 }
