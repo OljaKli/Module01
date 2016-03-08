@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Ola-Mola on 08/03/16.
+ * Tests for Notepad class
  */
 public class NotepadTest {
 
