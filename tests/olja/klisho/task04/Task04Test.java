@@ -23,4 +23,11 @@ public class Task04Test {
         double max = Task04.maxSum(ar);
         assertEquals(6.02, max, 0.0001);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testEmpty() throws Exception {
+        double ar[] = {};
+        double max = Task04.maxSum(ar);
+
+    }
 }

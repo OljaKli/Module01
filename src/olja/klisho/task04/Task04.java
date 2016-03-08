@@ -14,6 +14,10 @@ public class Task04 {
 
     public static  double maxSum (double ar []) {
         int n = ar.length;
+        if (ar.length == 0) {
+            throw new IllegalArgumentException("Please fill the array. It must contain values");
+        }
+
         double max = (ar[0]+ ar[n-1]);
         for (int i = 0; i < n/2+1; i++) {
             if (max < ar[i]+ar[n-i-1])
